@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Головна{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>Вітаємо в нашому Інтернет-магазині "Скарбниця знань"!</p>
+        <button class="btn btn-warning" onclick="window.location.href='/catalog'">Зробити замовлення</button>
+
+        {% for el in values %}
+            <p>{{ el }}</p>
+        {% endfor %}
+
+    </div>
+{% endblock %}
