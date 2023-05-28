@@ -1,0 +1,141 @@
+body {
+    background-color: #ffc107;
+}
+
+h1, p {
+    color: black;
+}
+
+button {
+    color: #fff;
+    background-color: #0d6efd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.product {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+}
+
+.catalog-content {
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+    margin-left: 25%; /* Змініть margin-left на 25% */
+    padding: 0 2.5%;
+}
+
+.catalog {
+    float: right; /* Додайте float: right; */
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+@media screen and (max-width: 768px) {
+    .catalog {
+        width: 100%;
+    }
+}
+
+catalog h3 {
+    margin-top: 50px;
+    font-size: 23px;
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h3 {
+        font-size: 14px;
+    }
+}
+
+.text-container {
+    margin-top: 100px;
+    width: 75%;
+    margin-left: auto; /* Замініть margin-left на auto */
+    margin-right: auto; /* Додайте margin-right: auto */
+    padding: 0 2.5%;
+    display: flex;
+    justify-content: center; /* Замініть justify-content на center */
+    align-items: center; /* Замініть align-items на center */
+}
+
+.text-container .title {
+    margin-top: 0;
+}
+
+.catalog-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.product-image-container img {
+    max-width: 100%;
+    display: block; /* Додайте display: block; */
+    margin-left: auto; /* Замініть margin-left на auto */
+    margin-right: auto; /* Замініть margin-right на auto */
+}
+
+.image-container {
+    display: flex; /* Додайте display: flex; */
+    justify-content: center; /* Додайте justify-content: center; */
+    align-items: center; /* Додайте align-items: center; */
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+.product-image-container img {
+    display: flex;
+    justify-content: center;
+    align-items: center:
+}
+
+.product-image-container img {
+    max-width: 30%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .product-image-container img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
